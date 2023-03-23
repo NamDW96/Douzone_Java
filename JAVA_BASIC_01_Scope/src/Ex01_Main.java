@@ -1,6 +1,4 @@
 import kr.or.kosa.common.Car;
-
-
 /*
 클래스 == 설계도 == 타입(사용자 정의)
 
@@ -44,7 +42,7 @@ class 설계도 {
 3. 하나의 물리적 파일에 여러개의 클래스를 사용할 수 있게 해줌(연습..)
 3.1 public 접근자는 한개만 갖는다.
 
- */
+*/
 class Emp{	// 이런방식은 연습할때나 사용.
 }
 
@@ -69,7 +67,11 @@ class Dept{  // 컴파일러가 default class Dept 해석
 		this.count = count;
 		}
 	}
-	
+	public void setCount(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+}	
 /*class Apt{
 	
 }*/
@@ -98,9 +100,10 @@ class Test{	  //default
 
 /*
  폴더
-
+kr.or.kosa.dto.Test
  */
- public class Test{
+class Test2{
+	 
   private int i;
   
   public void sesI(int i){
@@ -111,17 +114,10 @@ class Test{	  //default
   }
   
   public void print(){
-	  
   }
+  
  }
  
- 
-
-
-
-
-
-
 
 public class Ex01_Main {
 
@@ -142,7 +138,7 @@ public class Ex01_Main {
 		System.out.println(dept.dname);
 		
 		dept.setCount(-100);
-		System.out.println(dept.count);
+		System.out.println(dept.getCount());
 		
 		Test test = new Test();
 		test.print(); //
@@ -152,7 +148,4 @@ public class Ex01_Main {
 
 
 
-public void setCount(int i) {
-	// TODO Auto-generated method stub
-	
-}}
+
