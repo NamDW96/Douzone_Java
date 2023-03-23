@@ -11,10 +11,11 @@ public class Q9012 {
 		
 		int money = Integer.parseInt(sc.nextLine());
 		
-		num = money / unit;
-		System.out.println(unit+" - " +num+"개");
+
 		while(unit>1)
 		{
+			num = money / unit;
+			System.out.println(unit+" - " +num+"개");
 			money = money-unit*num;
 			if(sw==0) {
 				unit /= 2;
@@ -24,8 +25,7 @@ public class Q9012 {
 				unit /=5;
 				sw = 0;
 			}
-			num = money / unit;
-			System.out.println(unit+" - " +num+"개");
+
 		}
 		
 	}
