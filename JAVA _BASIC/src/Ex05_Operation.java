@@ -5,6 +5,7 @@ public class Ex05_Operation {
 	public static void main(String[] args) {
 		//연산자 (산술, 논리, 관계)
 		int result = 100 / 100;
+		
 		System.out.println("result : "+ result);
 		
 		result = 13/2; //몫을 구하는 연산자
@@ -22,7 +23,7 @@ public class Ex05_Operation {
 		System.out.println("i :" + i);
 		//다른 연산과 결합되지 않고, 혼자서 있으면 전치와 후치는 의미가 없다
 		
-		//Today poin (증가감 연산자와 다른 연산이 결합되면)
+		//Today point (증가감 연산자와 다른 연산이 결합되면)
 		int i2 = 5;
 		int j2 = 4;
 		

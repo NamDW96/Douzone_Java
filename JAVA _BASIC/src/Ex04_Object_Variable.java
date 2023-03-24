@@ -49,7 +49,5 @@ public class Ex04_Object_Variable {
 		 1. main 함수 실행 .... 반드시 local variable 초기화
 		 2. main 시작점 
 		 */
-		 
 	}
-
 }

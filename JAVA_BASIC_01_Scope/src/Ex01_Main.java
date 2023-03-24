@@ -10,7 +10,7 @@ import kr.or.kosa.common.Car;
 고유정보 : 크게 변하지 않는값 / 상태정보 : 상황에 따라 값이 바뀌는 정보 / 부품정보 >> 다시 나누어 질 수 있음.
 field >> variable
 
-함수 (mathod) >> 기능(행위) >> ex)자동차 -달린다, 멈춘다, 소리가 난다 ...
+함수 (method) >> 기능(행위) >> ex)자동차 -달린다, 멈춘다, 소리가 난다 ...
 
 +추가저으로 생성자(함수) >> 특수한 목적의 함수 
 >> 객체가 생성시 member field 초기화 목적 생성되는 함수, getter, setter(read, write)

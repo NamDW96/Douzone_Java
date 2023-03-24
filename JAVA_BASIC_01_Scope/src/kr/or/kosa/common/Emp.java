@@ -14,7 +14,7 @@ public class Emp {
 	private String job;
 	private int sal;
 	
-	public Emp(int empno, String ename, String job, int sal) {
+	public Emp(int empno, String ename, String job, int sal) { 
 		super();
 		this.enpno = empno;
 		this.ename = ename;

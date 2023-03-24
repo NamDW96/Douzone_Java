@@ -67,14 +67,41 @@ package kr.or.kosa;
 
 public class Airplane {
 	
+//	private static int airP_sum;
+//	private String airName;
+//	private int airNum;
+//	
+//	public Airplane(int num, String name) {
+//		airNum =num;
+//		airName = name;
+//		airP_sum++;
+//		// 생성자는 함수를 호출할 수 없다.
+//	}
+//	public int getAirNum() {
+//		return airNum;
+//	}
+//	public String getAirName() {
+//		return airName;
+//	}
+//	
+//	public void airDisplay() {
+//		System.out.printf("비행기의 번호 :[%d],이름[%s]\n",airNum,airName);
+//	}
+//	
+//	public void AirPlaneTotalCount() {
+//		System.out.printf("총 제작 대수 : %d\n",airP_sum);
+//	}
+	
+	//------------예쁜 코드로 수정^^---------------------------------------------
+	
 	private static int airP_sum;
 	private String airName;
 	private int airNum;
 	
-	public Airplane(int num, String name) {
-		airNum =num;
-		airName = name;
-		airP_sum++;
+	public Airplane(int airNum, String airName) {
+		this.airNum =airNum;
+		this.airName = airName;
+		airP_sum++; // airP_sum 누적대수
 		// 생성자는 함수를 호출할 수 없다.
 	}
 	public int getAirNum() {
@@ -91,6 +118,7 @@ public class Airplane {
 	public void AirPlaneTotalCount() {
 		System.out.printf("총 제작 대수 : %d\n",airP_sum);
 	}
+
 
 	
 }

@@ -29,6 +29,7 @@ public class Ex06_Operation {
 		 */
 		Scanner sc = new Scanner(System.in);
 		int score = sc.nextInt();
+		// int socre = Integer.parseInt(sc.nextLine());
 		String grade = "";
 		
 		if(score >=90) {
@@ -95,7 +96,7 @@ public class Ex06_Operation {
 			System.out.println(i);
 		}
 		
-		for(int i=65; i<=690; i++) {
+		for(int i=65; i<=90; i++) {
 			System.out.println((char)i + " ");
 		}
 		System.out.println(); //엔터처리
@@ -117,9 +118,9 @@ public class Ex06_Operation {
 			for(int j=1; j<10; j++) {
 				//
 			}
-			System.out.println("");
+			System.out.println("^");
 		}
-		System.out.println("");
+		System.out.println("^");
 		for(int i=1; i<10; i++) {
 			for(int j=2; j<10; j++) {
 				System.out.print(j+ "X"+ i + "=" +i*j + "\t");

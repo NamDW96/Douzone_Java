@@ -37,5 +37,4 @@ public class Ex12_Method_Overloading {
 		Human2 man2 = t3.add(man); //0x123번지
 		System.out.println(man.name);
 	}
-
 }

@@ -24,13 +24,12 @@ public class Ex12_ETC {
 		//java.lang.ArithmeticException: / by zero
 		//무한대의 값을 정수로 표현할 수 없기 때문이다
 		
-	    double result2 = 5 /0.0;
+	    double result2 = 5 / 0.0;
 	    System.out.println(result2);  // 예외 발생하지 않고 Infinity (무한대)라고 출력
 	    
 	    double result3 = 5 % 0.0;
 	    System.out.println(result3);  // 예외 발생하지 않고 NaN (Not a Number)라고 출력
-	    
-	    
+
 	    
 	    int x = 5;
 	    double y = 0.0;

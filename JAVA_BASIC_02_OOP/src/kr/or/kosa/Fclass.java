@@ -33,10 +33,10 @@ paramter type >> void print(String 변수)
 parameter type >> 8가지 기본 + 1(String) , Array , class , interface , Collection
 
 void print(int i){ }  >> 호출  print(100);
-void print(String str) {} >> 호출  print("이예진");
+void print(String str) {} >> 호출  print("문자열");
 void print(Car c) {} >> 호출 > Car c1 = new Car()  print(c1);  ....  print(new Car());
 
-void print2(int a,  int b , int c){ } //나는 무조건 실행할때 3개 paramter  받겠다 강제
+void print2(int a,  int b , int c){ } //나는 무조건 실행할때 3개 parameter  받겠다 강제
 
 print2(10); (x)
 print2(10,20) (x)
