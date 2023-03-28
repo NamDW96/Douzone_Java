@@ -12,10 +12,7 @@ public class Bubble_Sort {
 		for(int i = 1 ; i < datalength ; i++) {
 			for(int j = 0 ; j < datalength - i; j++) {
 				if(data[j] > data[j+1]) {
-					//swap(data, j, j+1);
-					int temp = data[i];
-					data[i] = data[j];
-					data[j] = temp;
+					swap(data, j, j+1);
 				}
 			}
 		}
