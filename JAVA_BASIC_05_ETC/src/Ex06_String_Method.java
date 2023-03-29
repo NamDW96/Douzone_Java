@@ -72,13 +72,59 @@ public class Ex06_String_Method {
 			System.out.println(s);
 		}
 		
+		////////////////////////////
+		
 		//정규표현식 일단 내일(03/29)
 		
+		//정규표현식 (문자들을 조합해서 규칙을 만들고 : 그 규칙하고 데이터를 비교해서 판단)
+	 	//정규표현식 일단 내일 시간상...
+		 String str5="슈퍼맨.팬티.노랑색.우하하.우하하";
+		 String[] namearray2 = str5.split(".");
+		 //String[] namearray2 = str5.split("\\."); 
+		
+		for(String s : namearray2) {
+			System.out.println(s);
+		}
+		
+		/*
+		IP 주소를 .(dot) 기준으로 나누는 예제입니다.
+	    구분자를 지정하는 파라미터는 정규표현식이라서 .만 넣으면 원하시는대로 나오지 않습니다.
+		정규표현식의 예약어라서 .(dot) 앞에 역슬래시(\)를 2개 넣어야 인식됩니다.
+		*/
+		String ipAddress = "110.20.0.255";
+		String[] ips = ipAddress.split("\\.");
+		for (int i = 0; i < ips.length; i++) {
+			System.out.println("ips[" + i + "] = " + ips[i]);
+		}
+
+	// 출력
+	//ips[0] = 110
+	//ips[1] = 20
+	//ips[2] = 0
+	//ips[3] = 255	
+		
+	//정규표현식 (문자들을 조합해서 규칙을 만들고 : 그 규칙하고 데이터 비교해서 판단)
+	//우편번호 : {\d3}-{\d3} >> 12-123 (false) , 123*123(false) , 111-111(true)
+	//https://cafe.naver.com/erpzone/220
+		
+	//정규 표현식(java , javascript , Oracle , C#) 표준 
+	//핸드폰 , 차량번호 , 도메인주소 , 이메일 정규표현으로 구현 >> 입력한 데이터 유효성 검증  	
+
+	//참고 ....StringTokenizer
+	 String str6 = "a/b,c-d.f";
+	 StringTokenizer sto = new StringTokenizer(str6 , "/,-.");
+	 while(sto.hasMoreElements()) {
+		 System.out.println(sto.nextToken());
+	 }
+		//우편번호 :
+		
+		
+		//////////////
 		//참고..
-		String str6="a/b,c-d.f";
-		StringTokenizer sto = new StringTokenizer(str6, "/,-.");
-		while(sto.hasMoreElements()) {
-			System.out.println(sto.nextToken());
+		String str103="a/b,c-d.f";
+		StringTokenizer sto1 = new StringTokenizer(str6, "/,-.");
+		while(sto1.hasMoreElements()) {
+			System.out.println(sto1.nextToken());
 		}
 		
 		//넌센스 
