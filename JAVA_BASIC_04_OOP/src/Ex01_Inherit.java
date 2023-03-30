@@ -60,7 +60,7 @@ class Child extends Father {
 }
 
 
-public class Ex01_inherit {
+public class Ex01_Inherit {
 	public static void main(String[] args) {
 		
 		Child child = new Child();

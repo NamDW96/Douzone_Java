@@ -49,13 +49,10 @@ public class Cinema {
 			System.out.println("좌석을 선택해주세요. 예)1-1");
 			String inputSeat = sc.nextLine();
 		
-			int exist=0;
-		
 			for(int i=0; i<seat.length; i++) {
 				for(int j=0; j<seat[i].length; j++) {
 					if(seat[i][j].equals(inputSeat)) {
 						bookSeat(seat, inputSeat);
-						exist++;
 						break;
 					}
 				}
