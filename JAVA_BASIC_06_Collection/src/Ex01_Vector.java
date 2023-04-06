@@ -8,7 +8,7 @@ Collection 인터페이스 >> 상속 List >> 구현 ArrayList
 Collection 인터페이스 >> 상속 Set >> 구현 HAshset
 
 * ArrayList의 부모타입은 List 이다 (O) >> 다형성
-* Cellection 인터페이스는 ArrayList 부모타입이다(O)
+* Collection 인터페이스는 ArrayList 부모타입이다(O)
 * instanceof 검증
 
 Map 인터페이스 (key, value) 쌍의 배열 >> 구현 HashMap  ex)전화번호 02~ 031~
