@@ -1,15 +1,60 @@
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
  
 */
 public class Ex10_File_SubList {
 	
+	static int totalfiles =0;
+	static int totaldirs=0;
 	
 	static void printFileList(File dir) {
+		System.out.println("Full Path : " + dir.getAbsolutePath());
+		List<Integer> subdir = new ArrayList<>();
+		File[] files = dir.listFiles();
+		for (int i=0; i<files.length; i++) {
+			String filename = files[i].getName(); // 폴더명 or 파일명
+			if(files[i].isDirectory()) {
+				filename = "[DIR] "+ filename;
+				//POINT
+				subdir.add(i); //폴더인 경우 index 관리 >> ArrayList를 통해서
+				//subdir[0]= 1
+			} else {
+				filename = filename + " / " + files[i].length() + "byte";
+			}
+			System.out.println(filename);
+		}
 		
+		//폴더 개수 -subdir.size
+		//파일 개수 
+		int dirnum = subdir.size(); //현재 주어진 폴더의 하위 폴더 개수
+		int filenum = files.length - dirnum;// 현재 주어진 폴더의 파일개수
 		
+		//누적개수 (하위 폴더 자원)
+		totaldirs += dirnum;
+		totalfiles += filenum;
+		
+
+		System.out.println("[Current DirNum] : " + dirnum);
+		System.out.println("[Current FileNum] : " + filenum);
+		System.out.println("***************************************");
+		/*
+		 POINT (하우 폴더에 다시 하위 폴더 ....
+		 [0] > a.txt
+		 [1] > aaa 폴더 >a-1 폴더, a-2 폴더 
+		 [2] > bbb 폴더 >b-1 폴더 , b.txt, b-1.jbp
+		 [3] 
+		 
+		 */
+		for(int i=0;i <subdir.size(); i++) {
+			int index = subdir.get(i);
+			 printFileList(files[index]);
+		}
 	}
+	
+	
 	public static void main(String[] args) {
 		
 	
@@ -24,9 +69,12 @@ public class Ex10_File_SubList {
 			System.out.println("유효하지 않은 디렉토리입니다.");
 			System.exit(0);
 
-		}
+		}	
 		
 		//정상적인 경로 그리고 폴더 있구나 ...
 		printFileList(f);
+		System.out.println("누적 총 파일수 : " + totalfiles);
+		System.out.println("누적 총 폴더수 : " + totaldirs);
+		System.out.println("");
 	}
 }
