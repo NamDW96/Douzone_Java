@@ -14,4 +14,21 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/kr/or/DataObject/BMI.java</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Users/KOSA/Downloads/BMI.java</locationURI>
+		</link>
+		<link>
+			<name>src/kr/or/DataObject/BMICheck.java</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Users/KOSA/Downloads/BMICheck.java</locationURI>
+		</link>
+		<link>
+			<name>src/kr/or/DataObject/Weight_Manager.java</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Users/KOSA/Downloads/Weight_Manager.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

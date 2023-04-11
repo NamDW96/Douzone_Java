@@ -33,6 +33,7 @@ public class Ex16_ObjectDataInputStream {
 			while((users = in.readObject()) != null) {
 				System.out.println(((UserInfo)users).toString());
 			}
+			// 일반적인 예외 처리 방법
 		}catch (FileNotFoundException e) {
 			System.out.println("파일이 존재하지 않아요");
 		}catch (EOFException e) {
