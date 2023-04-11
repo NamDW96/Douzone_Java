@@ -67,7 +67,7 @@ class Lotto {
 	}
 }
 
-public class Ex99_File_Lotto {
+public class Lotto_File {
 
 	public static void main(String[] args) {
 
