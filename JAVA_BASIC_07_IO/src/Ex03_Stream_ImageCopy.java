@@ -1,4 +1,6 @@
+
 import java.io.FileInputStream;
+
 import java.io.FileOutputStream;
 
 public class Ex03_Stream_ImageCopy {
